@@ -1,7 +1,7 @@
-FROM node:16
+FROM node:16.15.0
 WORKDIR /app
 
-COPY [".npmrc","package.json", "package-lock.json*", "./"]
+COPY ["package.json", "package-lock.json*", "./"]
 
 RUN npm install --production
 
