@@ -1,4 +1,4 @@
-FROM node:16.14-slim
+FROM node:16
 WORKDIR /app
 
 COPY ["package.json", "package-lock.json*", "./"]
