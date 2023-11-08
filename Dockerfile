@@ -5,6 +5,8 @@ COPY ["package.json", "package-lock.json*", "./"]
 
 RUN npm install --production
 
+ENV HOME /tmp
+
 COPY . .
 
 EXPOSE 8080
